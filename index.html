@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: white;
+}
+
+h1 {
+  color: white;
+  margin-left: 40px;
+} 
+legend {
+    color:#01DFA5;
+}
+button{
+    color: #01DFA5;
+}
+</style>
+</head>
+<body>
+    <fieldset>
+        <legend>Please feel free to send a message</legend>
+        <form name="contact" method="POST" data-netlify="true">
+            Email:<br>
+            <input type="text" name="Email" value="">
+            <br>
+            Message:<br>
+            <input type="text" name="Message" value="">
+            <br><br>
+            <fieldset>
+                <legend>Would you like a reply?</legend>
+                <p>
+                    <input type="radio" name="Would you like a reply?" value="Yes"> Yes<br>
+                    <input type="radio" name="Would you like a reply?" value="No"> No<br>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">Send Message</button>
+            </p>
+            
+        </form>
+    </fieldset>
+</body>
+</html>
